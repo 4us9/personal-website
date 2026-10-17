@@ -12,7 +12,7 @@ const alfa = Alfa_Slab_One({
 export default function Home() {
   return (
     <div className={`${alfa.className} flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black`}>
-      <main className=" flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      <main className=" flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start tracking-wider">
         <Image
           className="w-100 h-120 rounded-full mx-auto flex justify-center"
           src="/landing_page.jpeg"
@@ -22,7 +22,7 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="max-w-xs text-3xl font-semibold leading-10 text-black dark:text-zinc-50">
             Hi there, I'm Austin Pang! 
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
