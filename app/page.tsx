@@ -90,26 +90,28 @@ export default function Home() {
   </div>
   </section>
 
-<section className="bg-[#020510] pt-20 pb-24 px-8 md:px-16">
+<section className="bg-[#020510] pt-20 pb-24">
   <FadeInSection>
-    <h2 className={`${fugaz.className} text-white text-5xl mb-10`}>
-      Featured Projects
-    </h2>
+    <div className="max-w-6xl mx-auto px-8 md:px-16">
+      <h2 className={`${fugaz.className} text-white text-5xl mb-10`}>
+        Featured Projects
+      </h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-      <ProjectCard
-        image="/crashcode.png"
-        title="CrashCode: AI-Agent Accessibility Testing Tool"
-        description="1st place at Co.Hack (team of 4): a web app where 7 LLM agents, each simulating a user with a disability, navigate real websites in parallel browsers and report accessibility issues with code fixes."
-        tags={["React", "TypeScript", "Tailwind", "LLM Agents", "WebSockets"]}
-      />
-      <ProjectCard
-        image="/dna-ml.png"
-        title="DNA Promoter Sequence Classifier"
-        description="Full-stack web app that classifies DNA sequences as promoters or non-promoters using a Random Forest model with 6-mer features, hitting 95% test accuracy."
-        repo="https://github.com/4us9/dna-seq-classifier"
-        tags={["React", "Tailwind", "FastAPI", "scikit-learn", "Python"]}
-      />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        <ProjectCard
+          image="/crashcode.png"
+          title="CrashCode: AI-Agent Accessibility Testing Tool"
+          description="1st place at Co.Hack (team of 4): a web app where 7 LLM agents, each simulating a user with a disability, navigate real websites in parallel browsers and report accessibility issues with code fixes."
+          tags={["React", "TypeScript", "Tailwind", "LLM Agents", "WebSockets"]}
+        />
+        <ProjectCard
+          image="/dna-ml.png"
+          title="DNA Promoter Sequence Classifier"
+          description="Full-stack web app that classifies DNA sequences as promoters or non-promoters using a Random Forest model with 6-mer features, hitting 95% test accuracy."
+          repo="https://github.com/4us9/dna-seq-classifier"
+          tags={["React", "Tailwind", "FastAPI", "scikit-learn", "Python"]}
+        />
+      </div>
     </div>
   </FadeInSection>
 </section>
