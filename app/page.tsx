@@ -13,18 +13,18 @@ export default function Home() {
   return (
  
 
-    <div className={`${fugaz.className} flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black`}>
+    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-50">
         <a href="https://www.linkedin.com/in/austinpang9" ><AiFillLinkedin 
         size={50}
-        className="rounded-lg bg-blue-600 text-white p-1"
+        className="rounded-full"
         />
         
         </a>
         
       </div>
 
-      <main className=" flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start tracking-wider">
+      <main className="">
         <Image
           className="w-100 h-140 rounded-full mx-auto flex justify-center"
           src="/landing_page.jpeg"
@@ -33,8 +33,8 @@ export default function Home() {
           height={550}
           priority
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 text-black dark:text-zinc-50">
+        <div className={`flex flex-col items-center gap-6 text-center sm:items-start sm:text-left`}>
+          <h1 className={`${fugaz.className} max-w-xs text-3xl font-semibold leading-10 text-black dark:text-zinc-50`}>
             Hi there, nice to meet you! I'm Austin. 
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
