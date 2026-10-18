@@ -1,2 +1,109 @@
-/* Tailwind v4 (what new Next.js projects ship with now) */
 @import "tailwindcss";
+
+.gradient-hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  contain: layout style;
+}
+
+.gradient-hero .container {
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 739px;
+}
+
+.gradient-hero .blur {
+  filter: blur(100px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150vmax;
+  height: 150vmax;
+  transform: translate(-50%, -50%);   /* static centering — do NOT animate this */
+}
+
+
+.gradient-hero .gradient-mask {
+  border-radius: 99999px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  min-width: 1000px;
+  height: 100vh;
+  transform: translate(-50%, -50%) scale(0.7);
+  overflow: hidden;
+}
+
+.gradient-hero .spinning-gradient {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: spin 12s linear infinite;
+  background: conic-gradient(
+    from 0deg,
+    #08f, #f60, #bbffa1, #4c00ff, #ab2666, #08f
+  );
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+.gradient-hero .content-wrap {
+  width: 100%;
+  position: relative;
+  color: white;
+  margin-top: 24px;
+  max-width: 56rem;
+}
+
+.gradient-hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gradient-hero em {
+  font-family: 'Times New Roman', serif;
+  font-weight: lighter;
+  font-size: 64px;
+  letter-spacing: -3px;
+}
+
+.gradient-hero .intro {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 130%;
+}
+
+.gradient-hero .body-copy {
+  margin-top: 30px;
+  position: relative;
+  font-size: 20px;
+  line-height: 130%;
+  left: 180px;
+  font-family: Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
