@@ -16,10 +16,10 @@ export default function Home() {
       <header className="w-full bg-violet-600 py-4 px-8">
         <div className="flex justify-end items-center gap-5 text-3xl">
           <a href="https://www.linkedin.com/in/austinpang9" target="_blank" rel="noopener noreferrer">
-            <AiFillLinkedin className="text-white hover:text-violet-200 transition-colors" />
+            <AiFillLinkedin className="text-white hover:text-sky-400 transition-colors" />
           </a>
           <a href="https://www.github.com/4us9" target="_blank" rel="noopener noreferrer">
-            <AiFillGithub className="text-white hover:text-violet-200 transition-colors" />
+            <AiFillGithub className="text-white hover:text-sky-400 transition-colors"/>
           </a>
         </div>
       </header>
