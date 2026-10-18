@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Fugaz_One } from 'next/font/google';
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai';
 
 const fugaz = Fugaz_One({
   weight: '400',
@@ -13,13 +13,17 @@ export default function Home() {
   return (
     <>
         
-      <header className="w-full bg-violet-600 py-4 px-8">
+      <header className="sticky top-0 z-50 w-full bg-violet-600 py-4 px-8">
         <div className="flex justify-end items-center gap-5 text-3xl">
           <a href="https://www.linkedin.com/in/austinpang9" target="_blank" rel="noopener noreferrer">
             <AiFillLinkedin className="text-white hover:text-sky-400 transition-colors" />
           </a>
           <a href="https://www.github.com/4us9" target="_blank" rel="noopener noreferrer">
             <AiFillGithub className="text-white hover:text-sky-400 transition-colors"/>
+          </a>
+          
+          <a href="mailto:austinpang19@gmail.com">
+            <AiFillMail className="text-white hover:text-sky-400 transition-colors" />
           </a>
         </div>
       </header>
@@ -62,6 +66,10 @@ export default function Home() {
         <a href="https://www.github.com/4us9" target="_blank" rel="noopener noreferrer">
           <AiFillGithub className="text-white hover:text-sky-400 transition-colors" />
         </a>
+        
+        <a href="mailto:austinpang19@gmail.com">
+          <AiFillMail className="text-white hover:text-sky-400 transition-colors" />
+        </a>
       </div>
     </div>
 
@@ -77,8 +85,18 @@ export default function Home() {
       />
     </div>
   </div>
+
+  <hr className="w-full max-w-6xl mx-auto my-12 border-t border-white/20" />
+
+  <h1 className={`${fugaz.className} hero-name text-white text-5xl`}>
+      Featured Projects 
+  
+  </h1>
+
   </section>
-    <header className="gap-8 w-full bg-violet-800 py-10 px-8"></header>
+
+
+
 
     </>
   );
