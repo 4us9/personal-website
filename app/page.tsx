@@ -3,12 +3,14 @@ import { Fugaz_One } from 'next/font/google';
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai';
 
 import ProjectCard from "@/components/ProjectCard";
+import FadeInSection from "@/components/FadeInSection";
 
 const fugaz = Fugaz_One({
   weight: '400',
   subsets:['latin'], 
   variable: '--fugaz'
 });
+
 
 export default function Home() {
   return (
@@ -41,7 +43,7 @@ export default function Home() {
 
     {/* LEFT column — text */}
     <div className="flex flex-col items-start text-left gap-5">
-      <span className="text-7xl text-lg tracking-wide text-white">HELLO! 👋 I'M</span>
+      <span className="text-4xl tracking-wide text-white/70">HELLO! 👋 I'M</span>
 
       <h1 className={`${fugaz.className} hero-name text-8xl`}>
         Austin Pang
@@ -86,36 +88,31 @@ export default function Home() {
       />
     </div>
   </div>
-
-  <hr className="w-full max-w-6xl mx-auto my-12 border-t border-white/20" />
-
-<section className=" pt-20 pb-24 px-8 md:px-16">
-  <h1 className={`${fugaz.className} text-white text-5xl mb-10`}>
-    Featured Projects
-  </h1>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-    <ProjectCard
-      image="/crashcode.png"
-      title="CrashCode: AI-Agent Accessibility Testing Tool"
-      description="1st place at Co.Hack (team of 4): a web app where 7 LLM agents, each simulating a user with a disability, navigate real websites in parallel browsers and report accessibility issues with code fixes."
-      tags={["React", "TypeScript", "Tailwind", "LLM Agents", "WebSockets"]}
-    />
-    <ProjectCard
-      image="/dna-ml.png"
-      title="DNA Promoter Sequence Classifier"
-      description="Full-stack web app that classifies DNA sequences as promoters or non-promoters using a Random Forest model with 6-mer features, hitting 95% test accuracy."
-      repo="https://github.com/4us9/dna-seq-classifier"
-      tags={["React", "Tailwind", "FastAPI", "scikit-learn", "Python"]}
-    />
-  </div>
-</section>
-
   </section>
 
+<section className="bg-[#020510] pt-20 pb-24 px-8 md:px-16">
+  <FadeInSection>
+    <h2 className={`${fugaz.className} text-white text-5xl mb-10`}>
+      Featured Projects
+    </h2>
 
-
-
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+      <ProjectCard
+        image="/crashcode.png"
+        title="CrashCode: AI-Agent Accessibility Testing Tool"
+        description="1st place at Co.Hack (team of 4): a web app where 7 LLM agents, each simulating a user with a disability, navigate real websites in parallel browsers and report accessibility issues with code fixes."
+        tags={["React", "TypeScript", "Tailwind", "LLM Agents", "WebSockets"]}
+      />
+      <ProjectCard
+        image="/dna-ml.png"
+        title="DNA Promoter Sequence Classifier"
+        description="Full-stack web app that classifies DNA sequences as promoters or non-promoters using a Random Forest model with 6-mer features, hitting 95% test accuracy."
+        repo="https://github.com/4us9/dna-seq-classifier"
+        tags={["React", "Tailwind", "FastAPI", "scikit-learn", "Python"]}
+      />
+    </div>
+  </FadeInSection>
+</section>
 
     </>
   );
