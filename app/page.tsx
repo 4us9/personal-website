@@ -10,16 +10,6 @@ const fugaz = Fugaz_One({
   variable: '--fugaz'
 });
 
-type ProjectCardProps = {
-  image: string;
-  title: string;
-  description: string;
-  repo?: string;      // now optional
-  demo?: string;      // optional live link
-  tags?: string[];
-};
-
-
 export default function Home() {
   return (
     <>
@@ -107,7 +97,7 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
     <ProjectCard
       image="/crashcode.png"
-      title="CrashCode - AI-Agent Accessibility Testing Tool"
+      title="CrashCode: AI-Agent Accessibility Testing Tool"
       description="1st place at Co.Hack (team of 4): a web app where 7 LLM agents, each simulating a user with a disability, navigate real websites in parallel browsers and report accessibility issues with code fixes."
       tags={["React", "TypeScript", "Tailwind", "LLM Agents", "WebSockets"]}
     />
