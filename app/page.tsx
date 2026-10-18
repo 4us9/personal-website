@@ -31,30 +31,55 @@ export default function Home() {
       </div>
     </div>
 
-      {/* content layer — sibling, sits on top */}
-      <div className="content-wrap">
+        {/* two-column content */}
+  <div className="content-wrap grid grid-cols-1 md:grid-cols-2 items-center gap-12 px-8 md:px-16 max-w-6xl mx-auto">
 
-          <main className="">
-          <Image
-            className="w-120 h-120 rounded-xl mx-auto flex justify-center"
-            src="/landing_page.jpeg"
-            alt="Austin Pang image"
-            width={400}
-            height={550}
-            priority
-          />
-          <div className={`flex flex-col items-center gap-6 text-center sm:items-start sm:text-left`}>
-          <h1 className={`${fugaz.className} max-w-xs text-3xl font-semibold leading-10 text-white dark:text-zinc-50`}>
-            Hi there! I'm Austin. 
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-white dark:text-zinc-400">
-            I am a fourth-year Computer Science student at the University of Saskatchewan. 
-            
-          </p>
-          </div>
-          </main>
+    {/* LEFT column — text */}
+    <div className="flex flex-col items-start text-left gap-5">
+      <span className="text-7xl text-lg tracking-wide text-white">HELLO! 👋 I'M</span>
+
+      <h1 className={`${fugaz.className} hero-name text-8xl`}>
+        Austin Pang
+      </h1>
+
+      <p className="text-lg md:text-xl text-white/90 max-w-md leading-relaxed">
+        A fourth-year Computer Science student at the University of Saskatchewan,
+        graduating <span className="text-sky-300 font-semibold">April 2027</span>.
+        I build with <span className="text-sky-300 font-semibold">AI agents</span>,{" "}
+        <span className="text-sky-300 font-semibold">full-stack development</span>,
+        accessibility testing, and content creation.
+      </p>
+
+      <p className="text-base text-white/70 max-w-md leading-relaxed">
+        Open to work. Seeking a remote winter internship and new grad roles for 2027.
+      </p>
+
+      {/* icons */}
+      <div className="flex items-center gap-5 text-3xl mt-2">
+        <a href="https://www.linkedin.com/in/austinpang9" target="_blank" rel="noopener noreferrer">
+          <AiFillLinkedin className="text-white hover:text-sky-400 transition-colors" />
+        </a>
+        <a href="https://www.github.com/4us9" target="_blank" rel="noopener noreferrer">
+          <AiFillGithub className="text-white hover:text-sky-400 transition-colors" />
+        </a>
       </div>
-    </section>
+    </div>
+
+    {/* RIGHT column — photo */}
+    <div className="flex justify-center md:justify-end">
+      <Image
+        className="rounded-2xl"
+        src="/landing_page.jpeg"
+        alt="Austin Pang"
+        width={400}
+        height={500}
+        priority
+      />
+    </div>
+  </div>
+  </section>
+    <header className="gap-8 w-full bg-violet-800 py-10 px-8"></header>
+
     </>
   );
 }
