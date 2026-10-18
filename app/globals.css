@@ -26,38 +26,44 @@
   max-width: 739px;
 }
 
+/* blur layer — static, centered, never animates */
 .gradient-hero .blur {
   filter: blur(100px);
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 150vmax;
-  height: 150vmax;
-  transform: translate(-50%, -50%);   /* static centering — do NOT animate this */
+  transform: translate(-50%, -50%);
 }
 
 
-.gradient-hero .gradient-mask {
-  border-radius: 99999px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  min-width: 1000px;
-  height: 100vh;
-  transform: translate(-50%, -50%) scale(0.7);
-  overflow: hidden;
-}
 
+/* gradient fills the mask and does pure rotation */
 .gradient-hero .spinning-gradient {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  animation: spin 12s linear infinite;
+  animation: spin 20s linear infinite;   /* slower, drifting-ice calm */
   background: conic-gradient(
     from 0deg,
-    #08f, #f60, #bbffa1, #4c00ff, #ab2666, #08f
+    #0a2472,   /* deep ocean navy */
+    #1e3a8a,   /* royal blue */
+    #0077ff,   /* bright azure */
+    #00c2ff,   /* electric sky */
+    #7df9ff,   /* icy light-blue */
+    #4361ee,   /* cornflower / periwinkle */
+    #3a0ca3,   /* rare indigo-violet */
+    #0a2472    /* back to navy — seamless loop */
   );
+}
+.gradient-hero .gradient-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vmin;
+  height: 70vmin;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 @keyframes spin {
@@ -77,7 +83,7 @@
 .gradient-hero {
   position: relative;
   min-height: 100vh;
-  background-color: #000;
+  background-color: #020510;   /* cold near-black with blue undertone */
   display: flex;
   flex-direction: column;
   align-items: center;
