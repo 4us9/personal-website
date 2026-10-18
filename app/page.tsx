@@ -11,6 +11,18 @@ const fugaz = Fugaz_One({
 
 export default function Home() {
   return (
+    <>
+        
+      <header className="w-full bg-violet-600 py-4 px-8">
+        <div className="flex justify-end items-center gap-5 text-3xl">
+          <a href="https://www.linkedin.com/in/austinpang9" target="_blank" rel="noopener noreferrer">
+            <AiFillLinkedin className="text-white hover:text-violet-200 transition-colors" />
+          </a>
+          <a href="https://www.github.com/4us9" target="_blank" rel="noopener noreferrer">
+            <AiFillGithub className="text-white hover:text-violet-200 transition-colors" />
+          </a>
+        </div>
+      </header>
   
   <section className="gradient-hero">
     <div className="blur">
@@ -21,18 +33,6 @@ export default function Home() {
 
       {/* content layer — sibling, sits on top */}
       <div className="content-wrap">
-        {/* ...your icons, image, h1, p... */}
-          <div className="text-5xl flex justify-center gap-0.20 py-3">
-          <a href="https://www.linkedin.com/in/austinpang9" ><AiFillLinkedin 
-          size={50}
-          className="rounded-full text-white"
-          /> </a>
-
-          <a href="https://www.github.com/4us9" ><AiFillGithub 
-          size={50}
-          className="rounded-full text-white"
-          /> </a>
-          </div>
 
           <main className="">
           <Image
@@ -45,7 +45,7 @@ export default function Home() {
           />
           <div className={`flex flex-col items-center gap-6 text-center sm:items-start sm:text-left`}>
           <h1 className={`${fugaz.className} max-w-xs text-3xl font-semibold leading-10 text-white dark:text-zinc-50`}>
-            Hi there, nice to meet you! I'm Austin. 
+            Hi there! I'm Austin. 
           </h1>
           <p className="max-w-md text-lg leading-8 text-white dark:text-zinc-400">
             I am a fourth-year Computer Science student at the University of Saskatchewan. 
@@ -55,5 +55,6 @@ export default function Home() {
           </main>
       </div>
     </section>
+    </>
   );
 }

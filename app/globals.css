@@ -81,14 +81,10 @@
 }
 
 .gradient-hero {
-  position: relative;
-  min-height: 100vh;
-  background-color: #020510;   /* cold near-black with blue undertone */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  align-items: center;      /* ← centers children horizontally, shrinks them */
+  justify-content: center;  /* ← centers children vertically → pushes it down */
 }
 
 .gradient-hero em {
