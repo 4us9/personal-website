@@ -116,6 +116,19 @@ export default function Home() {
   </FadeInSection>
 </section>
 
-    </>
+{/* <section className="bg-[#020510] pt-20 pb-24">
+  <FadeInSection>
+    <div className="max-w-6xl mx-auto px-8 md:px-16">
+      <h2 className={`${fugaz.className} text-white text-5xl mb-10`}>
+        Outside of Coding
+      </h2>
+      <p>
+        I am highly competitive at running...
+      </p>
+    </div>
+  </FadeInSection>
+</section> */}
+
+</>
   );
 }
