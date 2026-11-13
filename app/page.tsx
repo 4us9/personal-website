@@ -105,6 +105,13 @@ export default function Home() {
           tags={["React", "TypeScript", "Tailwind", "LLM Agents", "WebSockets"]}
         />
         <ProjectCard
+          image="/sentra.png"
+          title="Sentra: Payment Firewall for AI Agents"
+          description="Built for the PayPal AI Hackathon: a checkpoint between AI agents and payment rails. Every payment is checked against a human-issued mandate through four layers (schema, rules, anomaly, intent), unsafe requests are blocked before reaching PayPal or Stripe, and every decision lands in a hash-chained ledger."
+          repo="https://github.com/4us9/sentra"
+          tags={["Next.js", "TypeScript", "Fastify", "Prisma", "PayPal", "Stripe", "MCP"]}
+        />
+        <ProjectCard
           image="/dna-ml.png"
           title="DNA Promoter Sequence Classifier"
           description="Full-stack web app that classifies DNA sequences as promoters or non-promoters using a Random Forest model with 6-mer features, hitting 95% test accuracy."
