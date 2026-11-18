@@ -50,16 +50,13 @@ export default function Home() {
       </h1>
 
       <p className="text-lg md:text-xl text-white/90 max-w-md leading-relaxed">
-        A fourth-year Computer Science student at the University of Saskatchewan,
+        A final-year Computer Science student at the University of Saskatchewan,
         graduating <span className="text-sky-300 font-semibold">April 2027</span>.
         I build with <span className="text-sky-300 font-semibold">AI agents</span>,{" "}
         <span className="text-sky-300 font-semibold">full-stack development</span>,
-        accessibility testing, and content creation.
+        and accessibility testing. 
       </p>
 
-      <p className="text-base text-white/70 max-w-md leading-relaxed">
-        Open to work. Seeking a remote winter internship and new grad roles for 2027.
-      </p>
 
       {/* icons */}
       <div className="flex items-center gap-5 text-3xl mt-2">
